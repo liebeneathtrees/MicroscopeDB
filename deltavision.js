@@ -1,0 +1,48 @@
+// ════════════════════════════════════════════════════
+// DELTAVISION / CYTIVA
+// ════════════════════════════════════════════════════
+DB.companies.push({id:"deltavision",name:"Applied Precision / Cytiva (DeltaVision)",shortName:"DeltaVision",flag:"🇺🇸",country:"USA",
+ founded:1992,status:"active",featured:false,hq:"Marlborough, Massachusetts, USA",
+ categories:["compound"],
+ overview:"Applied Precision, Inc. (founded 1992, Issaquah, WA) developed the DeltaVision widefield deconvolution microscopy platform — for two decades the gold standard instrument for high-resolution 3D fluorescence imaging in cell biology. The core insight: constrained iterative deconvolution of widefield fluorescence (via SoftWoRx software) delivers confocal-quality 3D images with significantly less photobleaching and phototoxicity than laser scanning confocal, at a fraction of the cost. The DeltaVision Core became the dominant fluorescence imaging platform in academic cell biology core facilities globally from the mid-2000s through the 2010s. The OMX and OMX Blaze systems added structured illumination microscopy (SIM) super-resolution, achieving ~120nm lateral resolution — one of the three major SIM platforms alongside Zeiss Elyra and Nikon N-SIM. Acquired by GE Healthcare Life Sciences in 2011; GE Life Sciences was subsequently acquired by Danaher Corporation and rebranded as Cytiva in 2020, making DeltaVision and Leica Microsystems sister companies within Danaher. SoftWoRx software and system service remain actively supported under Cytiva.",
+ oem:{acquiredBy:"GE Healthcare Life Sciences (2011) → Cytiva (2019)",acquired:[],makesFor:[],madeBy:[],notes:"DeltaVision instruments are sold and serviced globally by Cytiva."},
+ models:[
+  {id:"dv-elite",name:"DeltaVision Elite",series:"DeltaVision",type:"compound",subtype:"widefield + deconvolution",
+   introduced:2012,discontinued:false,price_tier:"premium",
+   price_new:"$25,000–$52,000",price_used:"$5,000–$18,000",
+   illumination:["LED (7 solid-state LEDs)"],magnification:"100x–1000x",
+   objectives:"Plan Apo",eyepieces:"10x",stage:"Motorized + piezo Z",
+   fluorescence:true,phase_contrast:true,darkfield:false,dic:true,motorized:true,inverted:true,
+   camera_port:true,software:"softWoRx (deconvolution gold standard)",
+   applications:["3D fluorescence","Co-localization","Fixed tissue imaging","Multi-channel","Cell biology"],
+   noteworthy:"Closed, optimized system for deconvolution microscopy. softWoRx deconvolution is considered the industry gold standard for widefield 3D. Constrained environment maximizes repeatability across experiments.",
+   oem_source:null}
+,
+
+  {id:"deltavision-core",name:"DeltaVision Core",series:"DeltaVision",type:"compound",subtype:"widefield deconvolution fluorescence inverted",
+   introduced:2004,discontinued:2015,price_tier:"premium",
+   price_new:null,price_used:"$10,000–40,000",
+   illumination:["Xenon or solid-state multi-channel illumination","Standard channels: DAPI, FITC, TRITC, Cy5, mCherry","Precision excitation shutters"],
+   magnification:"25x–1000x (Olympus UIS2 objective compatible)",
+   objectives:"Olympus UIS2 infinity-corrected; M25 thread; Plan Apochromat series standard for deconvolution",
+   eyepieces:"Standard Olympus eyetubes; primarily camera acquisition system",
+   stage:"Motorized XY; piezoelectric Z (25nm resolution); environmental chamber compatible",
+   fluorescence:true,phase_contrast:true,darkfield:false,dic:true,
+   motorized:true,inverted:true,camera_port:true,software:"SoftWoRx deconvolution (Applied Precision / Cytiva)",
+   applications:["Live cell imaging","Cell division","Chromosome dynamics","3D fluorescence","Protein localization","FRET"],
+   noteworthy:"One of the most widely installed widefield deconvolution systems in academic cell biology from 2004–2015. SoftWoRx constrained iterative deconvolution delivers confocal-quality 3D images from widefield data at a fraction of confocal cost with far less photobleaching. Built on an Olympus IX inverted platform. Acquired by GE Healthcare (2011) then Cytiva (2020). SoftWoRx remains actively maintained. Very commonly found in research institute equipment cores on the secondary market.",
+   oem_source:null},
+
+  {id:"deltavision-omx",name:"DeltaVision OMX / OMX Blaze",series:"OMX",type:"compound",subtype:"super-resolution structured illumination (SIM)",
+   introduced:2008,discontinued:false,price_tier:"ultra",
+   price_new:"$400,000+",price_used:"$50,000–200,000",
+   illumination:["Multiple laser lines (405/488/568/642nm standard)","Structured illumination pattern generation","TIRF illumination capable"],
+   magnification:"Effective 120nm lateral resolution (2x beyond diffraction limit via SIM)",
+   objectives:"Olympus UIS2 100x/1.42 Plan Apochromat oil (primary); 60x/1.42 TIRF apochromat",
+   eyepieces:"Not applicable — camera-only acquisition system",
+   stage:"Motorized XY; piezoelectric Z; environmentally controlled chamber",
+   fluorescence:true,phase_contrast:false,darkfield:false,dic:false,
+   motorized:true,inverted:true,camera_port:true,software:"SoftWoRx OMX; 3D-SIM reconstruction",
+   applications:["Super-resolution microscopy","Chromosome structure","Nuclear pore complexes","Centrosome dynamics","Membrane biology","Cilia and flagella"],
+   noteworthy:"A structured illumination microscopy (SIM) system achieving approximately 120nm lateral and 350nm axial resolution — roughly 2x the conventional widefield diffraction limit. One of the first commercially successful SIM platforms and still widely used in academic core facilities. The OMX Blaze adds higher-power lasers for faster live-cell super-resolution. One of the most common super-resolution systems alongside the Zeiss Elyra and Nikon N-SIM.",
+   oem_source:null}]});
